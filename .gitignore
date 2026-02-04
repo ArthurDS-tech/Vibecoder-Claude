@@ -1,0 +1,119 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment & Config
+.env
+.env.local
+.env.*.local
+.vibecoderc.json
+*.key
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# VS Code submodule
+vscode/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Temp
+*.tmp
+*.temp
+.cache/
+
+# Package
+*.vsix
+*.tgz
+
+# Test artifacts
+test-*.js
+dashboard.js
+diagnostico-completo.js
+
+# Personal folders
+agentes/
+.vibecode/
+
+# Documentation (keep only README)
+AGENTE-*.md
+ANALISE-*.md
+ANTES-*.md
+APLICAR-*.md
+AUTOCOMPLETE-*.md
+BUG-*.md
+CLI-*.md
+CODER-*.md
+COMO-*.md
+CONTINUACAO-*.md
+CORRECAO-*.md
+CORRECOES-*.md
+DESIGN-*.md
+DIAGNOSTICO-*.md
+ENTREGA-*.md
+EXEMPLOS-*.md
+FIX-*.md
+FLUXO-*.md
+GUIA-*.md
+IMPLEMENTACOES-*.md
+IMPROVEMENTS-*.md
+INICIAR.md
+INSTALACAO-*.md
+INSTALAR-*.md
+INSTALL*.md
+INTEGRATION-*.md
+LEIA-*.md
+MELHORIAS-*.md
+MODELO-*.md
+MUDANCAS-*.md
+NOVO-*.md
+PRIMEIRO-*.md
+PROBLEMA-*.md
+PRONTO-*.md
+PUBLICAR-*.md
+QUICK*.md
+RASTREAMENTO-*.md
+REFACTORING-*.md
+RESUMO-*.md
+ROADMAP-*.md
+SOLUCAO-*.md
+START-*.md
+STATUS*.md
+SISTEMA-*.md
+TERMINAL-*.md
+TEST-*.md
+TESTAR-*.md
+TESTE-*.md
+TESTES-*.md
+UPDATE-*.md
+USAR-*.md
+VIBE-*.md
+TRANSFORMACAO-*.md
+desneho.md

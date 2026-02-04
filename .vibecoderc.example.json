@@ -1,0 +1,12 @@
+{
+  "provider": "anthropic",
+  "model": "claude-3-5-sonnet-20240620",
+  "apiKey": "your-api-key-here",
+  "maxTokens": 4096,
+  "temperature": 0.7,
+  "excludePatterns": [
+    "node_modules/**",
+    "dist/**",
+    ".git/**"
+  ]
+}

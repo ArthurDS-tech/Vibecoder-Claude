@@ -1,0 +1,71 @@
+{
+  "name": "vibecode",
+  "version": "0.1.0",
+  "description": "VibeCode - AI-Powered Development Terminal and CLI",
+  "main": "dist/main.js",
+  "bin": {
+    "vibecode": "./dist/cli/terminal.js",
+    "vbt": "./dist/cli/terminal.js",
+    "vbc": "./dist/cli/index.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "ai",
+    "terminal",
+    "cli",
+    "development",
+    "code-generation",
+    "openai",
+    "anthropic",
+    "gpt",
+    "claude"
+  ],
+  "author": "VibeCode Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/vibecode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/vibecode/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/vibecode#readme",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "build": "npx tsc && node scripts/build.js",
+    "compile": "npx tsc",
+    "watch": "npx tsc -w",
+    "dev": "npx tsc -w",
+    "test": "node dist/index.js",
+    "demo": "node examples/demo-complete-flow.js",
+    "test:memory": "node examples/test-memory.js",
+    "test:ai": "node examples/test-ai-engine.js",
+    "terminal": "node dist/cli/terminal.js",
+    "package": "node scripts/package.js",
+    "vbc": "node dist/cli/index.js",
+    "git": "node dist/cli/index.js git"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.17.0",
+    "@types/glob": "^8.1.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "cosmiconfig": "^9.0.0",
+    "dotenv": "^16.4.0",
+    "fast-glob": "^3.3.2",
+    "glob": "^10.3.10",
+    "inquirer": "^8.2.6",
+    "openai": "^4.28.0",
+    "ora": "^5.4.1",
+    "simple-git": "^3.30.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.11.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,117 @@
+# Source files (não publicar código fonte)
+src/
+tests/
+examples/
+
+# Documentation (manter apenas README)
+*.md
+!README.md
+!LICENSE
+ARCHITECTURE.md
+CLI-*.md
+COMO-*.md
+DESIGN-*.md
+ENTREGA-*.md
+GUIA-*.md
+INICIAR.md
+INSTALL*.md
+MELHORIAS-*.md
+QUICKSTART.md
+REFACTORING-*.md
+RESUMO-*.md
+STATUS*.md
+TERMINAL-*.md
+TEST-*.md
+USAR-*.md
+IMPROVEMENTS-*.md
+INTEGRATION-*.md
+INSTALACAO-*.md
+PUBLICAR-*.md
+
+# Config files
+.vscode/
+.vibecode/
+.git/
+.github/
+.gitignore
+.gitattributes
+.editorconfig
+.eslintrc*
+.prettierrc*
+tsconfig*.json
+*.tsbuildinfo
+
+# Development files
+node_modules/
+vscode/
+scripts/
+dashboard.js
+desneho.md
+
+# Environment
+.env
+.env.*
+.vibecoderc.json
+
+# Build artifacts
+coverage/
+.nyc_output/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# Test files
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+__tests__/
+test/
+tests/
+
+# Installation scripts (usuário baixa do GitHub se quiser)
+install.bat
+install.sh
+install-global.bat
+install-global.sh
+install-global.ps1
+uninstall.bat
+uninstall.sh
+set-default-terminal.bat
+set-default-terminal.sh
+start.bat
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+dist/
+build/
+
+# Lock files (não publicar)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Only include compiled output
+!out/
