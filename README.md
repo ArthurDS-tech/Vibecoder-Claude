@@ -1,6 +1,7 @@
 <div align="center">
 
-# 🚀 VibeCode
+<img width="689" height="332" alt="image" src="https://github.com/user-attachments/assets/19728cf0-0240-4e4e-8442-f589f687c23d" />
+<img width="764" height="367" alt="image" src="https://github.com/user-attachments/assets/05f28982-3ebe-47cd-8716-ca515b1e1ab3" />
 
 ### AI-Powered Development Terminal
 
