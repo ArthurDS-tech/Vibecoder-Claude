@@ -8,7 +8,12 @@
     "vbt": "./dist/cli/terminal.js",
     "vbc": "./dist/cli/index.js"
   },
-  "preferGlobal": true,
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "keywords": [
     "ai",
     "terminal",
@@ -34,6 +39,8 @@
     "setup": "node scripts/setup.js",
     "build": "npx tsc && node scripts/build.js",
     "compile": "npx tsc",
+    "prepublishOnly": "npm run build",
+    "preinstall": "npm run build || exit 0",
     "watch": "npx tsc -w",
     "dev": "npx tsc -w",
     "test": "node dist/index.js",
