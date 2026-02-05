@@ -1,6 +1,8 @@
 <br/>
 
-<img width="780" src="https://i.ibb.co/qLn6QJkV/image.png" />
+<p align="center">
+  <img src="https://i.ibb.co/qLn6QJkV/image.png" width="100%" style="max-width:900px;" />
+</p>
 
 <br/><br/>
 
