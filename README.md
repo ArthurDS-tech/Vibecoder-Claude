@@ -1,11 +1,6 @@
-<div align="center">
-
-<br/>
-
-<img width="780" src="<img width="561" height="440" alt="image" src="https://github.com/user-attachments/assets/ff4beb71-6fef-4ab8-8d8c-ebccaf59c3fb" />
-" />
-
-<br/><br/>
+<p align="center">
+  <img src="terminal.gif" width="780" alt="VibeCode terminal demo" />
+</p>
 
 # ⚡ VibeCode — AI Development Terminal
 
