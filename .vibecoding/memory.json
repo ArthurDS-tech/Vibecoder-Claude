@@ -1,0 +1,123 @@
+{
+  "projectConventions": {
+    "namingStyle": "camelCase",
+    "moduleExportStyle": "named",
+    "errorHandlingPattern": "throw",
+    "testFramework": "jest",
+    "packageManager": "npm"
+  },
+  "conventions": [
+    {
+      "category": "namingStyle",
+      "value": "camelCase",
+      "source": "src/**/*.ts",
+      "confidence": "medium"
+    },
+    {
+      "category": "moduleExportStyle",
+      "value": "named",
+      "source": "src/git/types.ts",
+      "confidence": "high"
+    },
+    {
+      "category": "errorHandlingPattern",
+      "value": "throw",
+      "source": "src/cli/core/config.ts",
+      "confidence": "medium"
+    },
+    {
+      "category": "testFramework",
+      "value": "jest",
+      "source": "jest.config.js",
+      "confidence": "high"
+    },
+    {
+      "category": "packageManager",
+      "value": "npm",
+      "source": "package.json",
+      "confidence": "high"
+    }
+  ],
+  "architecturalDecisions": [],
+  "userPreferences": {
+    "verbosity": "normal",
+    "preferDiffs": true,
+    "autoApproveMinorRefactors": false
+  },
+  "taskHistory": [
+    {
+      "taskId": "define_loop_types",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/shared/types/loop.types.ts"
+      ]
+    },
+    {
+      "taskId": "define_memory_types",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/shared/types/memory.types.ts"
+      ]
+    },
+    {
+      "taskId": "create_memory_store",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/core/memory/index.ts",
+        ".vibecoding/memory.json"
+      ]
+    },
+    {
+      "taskId": "create_error_analyzer",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/core/loop/error-analyzer.ts"
+      ]
+    },
+    {
+      "taskId": "create_fix_generator",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/core/loop/fix-generator.ts"
+      ]
+    },
+    {
+      "taskId": "create_loop_engine",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/core/loop/index.ts"
+      ]
+    },
+    {
+      "taskId": "create_file_selector",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/core/context/file-selector.ts"
+      ]
+    },
+    {
+      "taskId": "create_token_counter",
+      "completedAt": "2026-03-17T13:58:22-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/shared/utils/token-counter.ts"
+      ]
+    }
+  ],
+  "knownIssues": []
+}
