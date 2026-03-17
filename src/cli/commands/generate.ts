@@ -1,5 +1,7 @@
 import { Command } from 'commander';
 import ora from 'ora';
+import * as fs from 'fs';
+import * as path from 'path';
 import { AIClient } from '../core/ai-client';
 import { ContextBuilder } from '../core/context';
 import { Logger } from '../utils/logger';
@@ -65,7 +67,8 @@ export function createGenerateCommand(
           });
 
           if (options.output) {
-            Logger.warn('File writing not implemented yet. Code displayed above.');
+            writeChangesToDisk(result.changes);
+            Logger.success('Changes written to disk successfully.');
           }
         } catch {
           // If not valid JSON, just print the response
@@ -79,4 +82,26 @@ export function createGenerateCommand(
     });
 
   return command;
+}
+
+function writeChangesToDisk(
+  changes: Array<{
+    file: string;
+    action: 'create' | 'modify' | 'delete';
+    content?: string;
+  }>
+): void {
+  for (const change of changes) {
+    const filePath = path.resolve(process.cwd(), change.file);
+
+    if (change.action === 'delete') {
+      if (fs.existsSync(filePath)) {
+        fs.unlinkSync(filePath);
+      }
+      continue;
+    }
+
+    fs.mkdirSync(path.dirname(filePath), { recursive: true });
+    fs.writeFileSync(filePath, change.content || '', 'utf-8');
+  }
 }

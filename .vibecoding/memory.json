@@ -117,6 +117,71 @@
       "filesModified": [
         "src/shared/utils/token-counter.ts"
       ]
+    },
+    {
+      "taskId": "stabilize_test_and_build_pipeline",
+      "completedAt": "2026-03-17T14:10:26-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "package.json",
+        "jest.config.js",
+        "tsconfig.json"
+      ]
+    },
+    {
+      "taskId": "enable_generate_disk_writes",
+      "completedAt": "2026-03-17T14:10:26-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/cli/commands/generate.ts"
+      ]
+    },
+    {
+      "taskId": "repair_legacy_coder_pipeline",
+      "completedAt": "2026-03-17T14:10:26-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/ai/agents/Coder.ts",
+        "src/ai/agents/Reviewer.ts",
+        "src/core/VibeCodeController.ts"
+      ]
+    },
+    {
+      "taskId": "integrate_runtime_validation_cli",
+      "completedAt": "2026-03-17T14:16:43-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/cli/commands/run.ts",
+        "src/cli/index.ts",
+        "src/core/loop/index.ts"
+      ]
+    },
+    {
+      "taskId": "remove_hidden_typescript_exclusion",
+      "completedAt": "2026-03-17T14:16:43-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "tsconfig.json",
+        "src/cli/utils/change-preview.ts",
+        "src/ai/agents/Reviewer.ts",
+        "src/ai/agents/CodeContextCollector.ts"
+      ]
+    },
+    {
+      "taskId": "complete_config_reset_flow",
+      "completedAt": "2026-03-17T14:16:43-03:00",
+      "result": "success",
+      "loopAttempts": 0,
+      "filesModified": [
+        "src/cli/core/config.ts",
+        "src/cli/commands/config.ts",
+        "src/cli/terminal.ts"
+      ]
     }
   ],
   "knownIssues": []

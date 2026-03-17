@@ -1070,10 +1070,8 @@ Quando sugerir código, seja específico sobre qual arquivo criar/modificar.`;
       await this.testAIConnection();
       
     } else if (subcommand === 'reset') {
-      // Resetar configuração
-      console.log(chalk.yellow('\n⚠️  Tem certeza que deseja resetar a configuração? (s/n)'));
-      // TODO: Implementar confirmação
-      console.log(chalk.gray('Funcionalidade em desenvolvimento\n'));
+      await this.configManager.reset();
+      console.log(chalk.green('\n✓ Configuração resetada para os padrões\n'));
       
     } else if (subcommand === 'set' && args[1] && args[2]) {
       await this.configManager.set(args[1] as any, args[2]);

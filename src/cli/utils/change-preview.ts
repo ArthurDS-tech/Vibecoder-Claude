@@ -4,19 +4,8 @@
  */
 
 import * as chalk from 'chalk';
-// import { CodeChange } from '../../ai/agents/Coder';
-import { DiffAnalyzer, DiffAnalysis } from '../../ai/analysis/DiffAnalyzer';
-
-// Temporary type definition for CodeChange
-export interface CodeChange {
-  file: string;
-  changes: string;
-  explanation: string;
-  type: 'create' | 'modify' | 'delete';
-  description?: string;
-  originalContent?: string;
-  content?: string;
-}
+import type { CodeChange } from '../../ai/agents/Coder';
+import { DiffAnalyzer } from '../../ai/analysis/DiffAnalyzer';
 
 export interface PreviewOptions {
   showLineNumbers?: boolean;
@@ -151,7 +140,7 @@ export class ChangePreview {
     showLineNumbers: boolean,
     colorize: boolean
   ): Promise<void> {
-    const lines = change.content.split('\n');
+    const lines = (change.content || '').split('\n');
     const maxLines = 20; // Mostrar no máximo 20 linhas
 
     for (let i = 0; i < Math.min(lines.length, maxLines); i++) {

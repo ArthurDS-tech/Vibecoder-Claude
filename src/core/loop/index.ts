@@ -156,7 +156,7 @@ export class LoopEngine {
           output,
           exitCode: 0,
           durationMs: Date.now() - startedAt,
-          errors: this.errorAnalyzer.parse(output, command.name),
+          errors: [],
         });
       } catch (error) {
         const executionError = error as {

@@ -19,6 +19,7 @@ import { createRefactorCommand } from './commands/refactor';
 import { createTestCommand } from './commands/test';
 import { createDocsCommand } from './commands/docs';
 import { createOptimizeCommand } from './commands/optimize';
+import { createRunCommand } from './commands/run';
 import { createConvertCommand } from './commands/convert';
 import { createSecurityCommand } from './commands/security';
 import { createCompareCommand } from './commands/compare';
@@ -57,6 +58,7 @@ program.addCommand(createOptimizeCommand(aiClient));
 program.addCommand(createSecurityCommand(aiClient));
 
 // Code utilities
+program.addCommand(createRunCommand());
 program.addCommand(createTestCommand(aiClient));
 program.addCommand(createDocsCommand(aiClient));
 program.addCommand(createConvertCommand(aiClient));

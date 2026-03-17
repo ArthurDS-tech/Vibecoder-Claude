@@ -158,6 +158,22 @@ export class ConfigManager {
     await this.save({ [key]: value });
   }
 
+  async reset(): Promise<void> {
+    const configPath = path.join(process.cwd(), '.vibecoderc.json');
+    const resetConfig = {
+      ...DEFAULT_CONFIG,
+      tokenUsage: {
+        totalTokens: 0,
+        totalCost: 0,
+        lastReset: new Date().toISOString(),
+        history: [],
+      },
+    };
+
+    fs.writeFileSync(configPath, JSON.stringify(resetConfig, null, 2));
+    this.config = null;
+  }
+
   async trackTokenUsage(tokens: number, command: string): Promise<void> {
     const config = await this.load();
     

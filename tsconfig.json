@@ -35,9 +35,6 @@
     "src/api-test/**",
     "src/auth-test/**",
     "src/patterns-test/**",
-    "src/crud/**",
-    "src/ai/agents/Coder.ts",
-    "src/core/VibeCodeController.ts",
-    "src/cli/utils/change-preview.ts"
+    "src/crud/**"
   ]
 }

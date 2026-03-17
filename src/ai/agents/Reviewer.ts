@@ -1,13 +1,5 @@
 import { AIEngine, AIMessage } from '../engine/AIEngine';
-// import { CodeChange } from './Coder';
-
-// Temporary type definition for CodeChange
-export interface CodeChange {
-  file: string;
-  changes: string;
-  explanation: string;
-  type: 'create' | 'modify' | 'delete';
-}
+import type { CodeChange } from './Coder';
 
 export interface ReviewResult {
   approved: boolean;

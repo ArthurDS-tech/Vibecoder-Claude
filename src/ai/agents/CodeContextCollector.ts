@@ -5,11 +5,9 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-// import { FileContext } from './Coder';
 import { ParserFactory } from '../parsers/ParserFactory';
 import { ParsedFile } from '../parsers/types';
 
-// Temporary type definition for FileContext
 export interface FileContext {
   path: string;
   content: string;

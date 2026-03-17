@@ -50,5 +50,17 @@ export function createConfigCommand(configManager: ConfigManager): Command {
       }
     });
 
+  command
+    .command('reset')
+    .description('Reset configuration to defaults')
+    .action(async () => {
+      try {
+        await configManager.reset();
+        Logger.success('Configuration reset to defaults');
+      } catch (error) {
+        handleError(error);
+      }
+    });
+
   return command;
 }
